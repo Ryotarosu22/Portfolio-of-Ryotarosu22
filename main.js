@@ -5,6 +5,6 @@ window.onload = function() {
 
   // ボタンがクリックされたら、アラートを表示する
   button.onclick = function() {
-    alert('Hello World!');
+    alert('Thank you for visiting this site!');
   };
 };
