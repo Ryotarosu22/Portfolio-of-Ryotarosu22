@@ -73,6 +73,32 @@
       </form>
     </section>
   </main>
+  
+  
+
+    <title>アクセスカウンター</title>
+    <script>
+      window.onload = function() {
+        const xhr = new XMLHttpRequest();
+        xhr.onreadystatechange = function() {
+          if (xhr.readyState === 4 && xhr.status === 200) {
+            document.getElementById('count').textContent = xhr.responseText;
+          }
+        };
+        xhr.open('GET', 'http://localhost:3000/', true);
+        xhr.send();
+      };
+    </script>
+    <h1>アクセスカウンター</h1>
+    <p>このページには、<span id="count">-</span>人のユーザーがアクセスしました。</p>
+  </body>
+</html>
+
+  
+  
+  
+  
+  
 
   <footer>
     <p>© 2023 Portfolio-of-Ryotarosu22</p>
